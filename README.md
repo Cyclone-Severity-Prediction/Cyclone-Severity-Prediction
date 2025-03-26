@@ -1,6 +1,9 @@
 Cyclone Severity Prediction
+
 Project Overview
+
 Introduction
+
 Cyclones are powerful atmospheric phenomena that can cause widespread destruction, loss of life, and significant economic damage. Accurate predictions of cyclone intensity are crucial for:
 
 Warning populations in advance, reducing casualties and property damage.
