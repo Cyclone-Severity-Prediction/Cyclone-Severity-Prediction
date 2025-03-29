@@ -1,9 +1,0 @@
-### Key Objectives
-- Identify the key factors that influence cyclone strength
-- Develop a model to predict cyclone intensity levels.
-
-
-The ***main goal*** of the following project is to create a model that predicts the severity of a tropical cyclone. We will use the data from the International Best Track Archive for Climate Stewardship (IBTrACS) and its geographical input features to train the model. More detailed description can be found in [documentation](https://www.ncei.noaa.gov/sites/g/files/anmtlf171/files/2024-07/IBTrACS_version4r01_Technical_Details.pdf).
-The model's output should be a prediction for the values within the "TD9636_STAGE" column.
-
-The IBTrACS is a global database that complies historical and recent tropical cyclone data from various agencies worldwide.The variables includes key information like : location (latitude and longitude), intensity (wind speed and central pressure and size and structure (radius of maximum winds).
