@@ -152,10 +152,6 @@ python app.py
 Streamlit:
 streamlit run app.py
 
-The application will be available at:
-
-Flask: http://localhost:5000
-Streamlit: http://localhost:8501
 
 How to Contribute
 Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
