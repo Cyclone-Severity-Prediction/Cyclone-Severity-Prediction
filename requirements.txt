@@ -1,7 +1,3 @@
-# Web framework for deployment
-flask==2.2.2               # Flask for creating the web application
-streamlit==1.12.0          # Streamlit for building interactive web apps
-
 # Data manipulation and analysis
 pandas==1.5.3              # Data processing and manipulation
 numpy==1.23.5              # Numerical computing with arrays
@@ -32,36 +28,13 @@ requests==2.28.1           # For HTTP requests, in case APIs are used
 joblib==1.2.0              # For saving and loading machine learning models
 python-dotenv==0.19.2      # For managing environment variables (useful for deployment)
 
+# Streamlit for building/running interactive web apps
+streamlit
 
+# How to Use This requirements.txt:
+# Save the above content into a requirements.txt file in your project directory.
 
-Explanation of Libraries:
-Flask & Streamlit: Used for building web applications and serving machine learning models.
-
-Pandas & Numpy: Essential for data processing and handling numerical operations.
-
-Scipy: Used for statistical tests and functions like f_oneway.
-
-Matplotlib & Seaborn: For plotting and visualizing data distributions.
-
-Plotly: For interactive visualizations.
-
-Folium: For geospatial data visualization and maps.
-
-Imbalance Handling (SMOTE from imblearn): Used to handle class imbalance in your machine learning model.
-
-Scikit-learn: Main library for machine learning models (e.g., Logistic Regression, Random Forest, Decision Tree), data splitting, and model evaluation.
-
-XGBoost: An efficient and powerful gradient boosting algorithm for model training.
-
-Joblib: For saving and loading machine learning models to avoid retraining.
-
-Python-dotenv: For managing environment variables, useful in deployment settings (e.g., API keys).
-
-How to Use This requirements.txt:
-Save the above content into a requirements.txt file in your project directory.
-
-To install the dependencies, run the following command in your terminal or command prompt:
-
-pip install -r requirements.txt
+# To install the dependencies, run the following command in your terminal or command prompt:
+# pip install -r requirements.txt
 
 
