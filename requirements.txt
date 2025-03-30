@@ -1,0 +1,40 @@
+# Data manipulation and analysis
+pandas==1.5.3              # Data processing and manipulation
+numpy==1.23.5              # Numerical computing with arrays
+scipy==1.9.3               # Scientific and technical computing
+plotly==5.10.0             # For interactive visualizations
+
+# Data visualization
+matplotlib==3.6.2          # 2D plotting and visualization
+seaborn==0.11.2            # Statistical data visualization built on top of Matplotlib
+
+# Geographic Visualization
+folium==0.12.1             # Interactive maps and geographic data visualization
+imblearn==0.9.1            # For handling class imbalance (SMOTE)
+
+# Machine learning libraries
+scikit-learn==1.1.2        # Machine learning library for model building and evaluation
+xgboost==1.7.3             # Gradient boosting model for classification and regression
+
+# Model evaluation
+scikit-learn==1.1.2        # For metrics such as accuracy, confusion matrix, etc.
+
+# Jupyter and notebook tools
+jupyterlab==3.4.4          # Jupyter notebook environment for running and testing notebooks
+ipykernel==6.9.1           # IPython kernel for running Jupyter notebooks
+
+# Additional useful libraries
+requests==2.28.1           # For HTTP requests, in case APIs are used
+joblib==1.2.0              # For saving and loading machine learning models
+python-dotenv==0.19.2      # For managing environment variables (useful for deployment)
+
+# Streamlit for building/running interactive web apps
+streamlit
+
+# How to Use This requirements.txt:
+# Save the above content into a requirements.txt file in your project directory.
+
+# To install the dependencies, run the following command in your terminal or command prompt:
+# pip install -r requirements.txt
+
+
