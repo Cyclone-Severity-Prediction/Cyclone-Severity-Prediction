@@ -7,7 +7,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import pickle
 import os
-
+import requests
+import zipfile
+import io
 
 # Fonction pour charger ou entraîner le modèle
 @st.cache_resource
@@ -22,15 +24,28 @@ def load_or_train_model():
         with open(scaler_path, "rb") as f:
             scaler = pickle.load(f)
         return model, scaler
-
-    # Charger les données
-    df = pd.read_csv(
-        "/app_development/ibtracs.csv",
-        low_memory=False,
-        na_values=[],
-        keep_default_na=False,
-    ).drop(0)
-
+    # URL du fichier ZIP hébergé sur GitHub
+    url = "https://github.com/Cyclone-Severity-Prediction/Cyclone-Severity-Prediction/raw/main/ibtracs.csv.zip"
+    
+    # Téléchargement du fichier ZIP
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        # Lecture du fichier ZIP en mémoire
+        with zipfile.ZipFile(io.BytesIO(response.content)) as z:
+            # Affiche la liste des fichiers contenus dans le ZIP
+            print(z.namelist())
+    
+            # Ouvre le fichier CSV dans le ZIP 
+            with z.open("ibtracs.csv") as f:
+                df = pd.read_csv(
+                    f,
+                    low_memory=False,
+                    na_values=[],
+                    keep_default_na=False
+                )
+    else:
+        print("Erreur lors du téléchargement :", response.status_code)
     # Pré-sélection des colonnes pertinentes
     columns_to_keep = [
         "SID",
